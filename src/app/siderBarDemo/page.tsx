@@ -16,6 +16,13 @@ const SiderBarDemoPage = () => {
                     <div className='d-none d-md-block'>
                         visible only on medium and large screens
                     </div>
+
+                    {/* different screens: text different align */}
+                    {/* mobile screens: text center */}
+                     {/* other screens: text start */}
+                    <div className='text-center text-md-start'>
+                        different screens: text different align
+                    </div>
                 </div>
             </div>
         </div>
