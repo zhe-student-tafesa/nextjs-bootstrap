@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css"
+import "./custom.scss"
+// import "bootstrap/dist/css/bootstrap.min.css.map"
 import BootstrapWrapper from "@/components/bootstrapWrapper/BootstrapWrapper";
 
 const geistSans = localFont({
@@ -31,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <BootstrapWrapper/>
+        <button className="btn btn-primary"> use re-define primary variables</button>
         {children}
       </body>
     </html>
